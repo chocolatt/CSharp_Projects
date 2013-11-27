@@ -8,10 +8,8 @@ namespace Quadratic_Equation
 {
     class FileOp
     {
-        public static void ReadFromFile(string filename)
+        public static double[] ReadFromFile(string filename)
         {
-           
-            //FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read);
             FileStream fs = File.OpenRead(filename);
             List<string> parametersList = new List<string>();
             using (StreamReader reader = new StreamReader(fs))
@@ -22,10 +20,14 @@ namespace Quadratic_Equation
                     parametersList.Add(param);
                 }
             }
-            int a = Convert.ToInt32(parametersList[0]);
-            int b = Convert.ToInt32(parametersList[1]);
-            int c = Convert.ToInt32(parametersList[2]);
-        }
+
+            double[] newParams = new double[3];
+            for (int i = 0; i < 3; i++)
+			{
+			    newParams[i] = Convert.ToDouble(parametersList[i]);
+			}
+            return newParams;
+           }
     }
 }
 

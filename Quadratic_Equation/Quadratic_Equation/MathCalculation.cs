@@ -7,7 +7,7 @@ namespace Quadratic_Equation
 {
     class MathCalculation
     {
-        public static double[] QuadraticEquation(int a, int b, int c)
+        public static double[] QuadraticEquation(double a, double b, double c)
         {
             {
                 double D;
