@@ -3,3 +3,8 @@ c:\users\olga.tkachuk\documents\visual studio 2010\Projects\Quadratic_Equation\Q
 c:\users\olga.tkachuk\documents\visual studio 2010\Projects\Quadratic_Equation\Quadratic_Equation\bin\Debug\Quadratic_Equation.pdb
 c:\users\olga.tkachuk\documents\visual studio 2010\Projects\Quadratic_Equation\Quadratic_Equation\obj\x86\Debug\Quadratic_Equation.exe
 c:\users\olga.tkachuk\documents\visual studio 2010\Projects\Quadratic_Equation\Quadratic_Equation\obj\x86\Debug\Quadratic_Equation.pdb
+D:\Install\Github\repository\Quadratic_Equation\Quadratic_Equation\obj\x86\Debug\Quadratic_Equation.exe
+D:\Install\Github\repository\Quadratic_Equation\Quadratic_Equation\obj\x86\Debug\Quadratic_Equation.pdb
+D:\Install\Github\repository\Quadratic_Equation\Quadratic_Equation\bin\Debug\Quadratic_Equation.exe
+D:\Install\Github\repository\Quadratic_Equation\Quadratic_Equation\bin\Debug\Quadratic_Equation.pdb
+D:\Install\Github\repository\Quadratic_Equation\Quadratic_Equation\obj\x86\Debug\ResolveAssemblyReference.cache
