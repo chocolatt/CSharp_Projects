@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Quadratic_Equation
 {
-    class MathCalculation
+    public class MathCalculation
     {
         public static double[] QuadraticEquation(double a, double b, double c)
         {

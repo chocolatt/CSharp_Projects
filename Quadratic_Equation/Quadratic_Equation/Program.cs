@@ -10,7 +10,23 @@ namespace Quadratic_Equation
     {
         static void Main(string[] args)
         {
-            string filename = @"D:\Install\Github\repository\Quadratic_Equation\parameters.txt";
+            string filename = @"D:\Install\Github\repository\Quadratic_Equation\empty.txt";
+
+            //if (args.Count() != 2)
+            //{
+            //    Console.WriteLine("Usage GLTest <in> <out>");
+            //    Console.ReadLine();
+            //    return;
+            //}
+
+            //string inFilePath = args[0];
+            //if (!File.Exists(inFilePath))
+            //{
+            //    Console.WriteLine("File not exists");
+            //    Console.ReadLine();
+            //    return;
+            //}
+
             FileOp.ReadFromFile(filename);
             var param = FileOp.ReadFromFile(filename);
             var result = MathCalculation.QuadraticEquation(param[0], param[1], param[2]);

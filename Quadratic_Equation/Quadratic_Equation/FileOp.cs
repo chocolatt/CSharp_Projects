@@ -10,22 +10,31 @@ namespace Quadratic_Equation
     {
         public static double[] ReadFromFile(string filename)
         {
-            FileStream fs = File.OpenRead(filename);
-            List<string> parametersList = new List<string>();
-            using (StreamReader reader = new StreamReader(fs))
+            double[] newParams = new double[3];
+            try
             {
-                string param;
-                while ((param = reader.ReadLine()) != null)
+                FileStream fs = File.OpenRead(filename);
+
+                List<string> parametersList = new List<string>();
+                using (StreamReader reader = new StreamReader(fs))
                 {
-                    parametersList.Add(param);
+                    string param;
+                    while ((param = reader.ReadLine()) != null)
+                    {
+                        parametersList.Add(param);
+                    }
+                }
+                for (int i = 0; i < 3; i++)
+                {
+                    newParams[i] = Convert.ToDouble(parametersList[i]);
                 }
             }
-
-            double[] newParams = new double[3];
-            for (int i = 0; i < 3; i++)
-			{
-			    newParams[i] = Convert.ToDouble(parametersList[i]);
-			}
+            catch (FileNotFoundException fnf)
+            {
+                Console.WriteLine(fnf.Message);
+                Console.WriteLine("Please, verify that expected file exists in given path");
+                //throw;
+            }
             return newParams;
            }
     }
